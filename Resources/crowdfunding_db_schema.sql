@@ -2,10 +2,10 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/ZFK5AW
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
-DROP TABLE IF EXISTS Contacts;
-DROP TABLE IF EXISTS Subcategory;
-DROP TABLE IF EXISTS Category;
-DROP TABLE IF EXISTS Campaign;
+DROP TABLE IF EXISTS "Contacts";
+DROP TABLE IF EXISTS "Subcategory";
+DROP TABLE IF EXISTS "Category";
+DROP TABLE IF EXISTS "Campaign";
 
 
 CREATE TABLE "Contacts" (
