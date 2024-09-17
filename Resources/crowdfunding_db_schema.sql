@@ -2,6 +2,11 @@
 -- Link to schema: https://app.quickdatabasediagrams.com/#/d/ZFK5AW
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
+DROP TABLE IF EXISTS Contacts;
+DROP TABLE IF EXISTS Subcategory;
+DROP TABLE IF EXISTS Category;
+DROP TABLE IF EXISTS Campaign;
+
 
 CREATE TABLE "Contacts" (
     "contact_id" INT   NOT NULL,
@@ -40,8 +45,8 @@ CREATE TABLE "Campaign" (
     "backers_count" INT   NOT NULL,
     "country" VARCHAR   NOT NULL,
     "currency" VARCHAR   NOT NULL,
-    "launch_date" datetime   NOT NULL,
-    "end_date" datetime   NOT NULL,
+    "launch_date" DATE   NOT NULL,
+    "end_date" DATE   NOT NULL,
     "category_id" VARCHAR   NOT NULL,
     "subcategory_id" VARCHAR   NOT NULL,
     CONSTRAINT "pk_Campaign" PRIMARY KEY (
@@ -58,3 +63,7 @@ REFERENCES "Subcategory" ("subcategory_id");
 ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "Category" ("category_id");
 
+SELECT * FROM "Contacts";
+SELECT * FROM "Subcategory";
+SELECT * FROM "Category";
+SELECT * FROM "Campaign";
