@@ -13,7 +13,7 @@ We added an optional visualization (pie charts) to practice viewing an interesti
 ## Installation
 1. Clone the repository
 2. Install dependencies (matplotlib, pandas, re, json, numpy)
-3. Our team used PostgreSQL. Make note to import tables in order of table creation due to relationships between tables.
+3. Our team used PostgreSQL. Make note to import tables in order of table creation due to relationships between tables. See schema under Resources.
 4. Alternatively, you can add the database and its related tables (collections) using a NOSQL platform (MongoDB). We added a file with the code called NOSQL_analysis.ipynb
 
 ## Acknowledgments
