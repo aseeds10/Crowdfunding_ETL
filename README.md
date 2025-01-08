@@ -1,5 +1,5 @@
-# Project Title
-Rutgers Bootcamp Project 2 - ETL Mini Project
+# Crowdfunding ETL
+Project 2 - ETL Mini Project
 
 ## Contributors
 Arielmy M. & Kanha B.
